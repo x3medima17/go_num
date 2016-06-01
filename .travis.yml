@@ -17,6 +17,7 @@ branches:
   - dev
   - ci
   - test
+  - refactor
   - "/^v\\d+\\./"
 env:
   global:
