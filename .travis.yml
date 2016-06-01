@@ -1,0 +1,24 @@
+language: go
+sudo: required
+compiler:
+- go
+os:
+- linux
+
+before_install:
+- echo $LANG
+- echo $LC_ALL
+- sudo apt-get install -y  gccgo-go
+before_script:
+script: 
+  go test
+branches:
+  only:
+  - master
+  - dev
+  - ci
+  - test
+  - "/^v\\d+\\./"
+env:
+  global:
+  - LANG="en_US.UTF-8"
