@@ -18,5 +18,5 @@ Example:
 	currentObj := NewNumber(numberToParse)
 	result := currentObj.Parse()
 	fmt.Println(result)
-
 ```
+You will get `one hundred fifty-seven thousand three hundred sixty-nine`
